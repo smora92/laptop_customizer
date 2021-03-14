@@ -1,5 +1,5 @@
 import React from 'react'
-import Specs from './Specs';
+import Parts from './Parts';
 
 export default function Features({ features, updateFeature, selected }) {
     return Object.keys(features).map((feature, idx) => {
@@ -9,7 +9,7 @@ export default function Features({ features, updateFeature, selected }) {
         <legend className="feature__name">
           <h3>{feature}</h3>
         </legend>
-        <Specs
+        <Parts
           feature={feature} 
           features={features}
           selected={selected} 
